@@ -1,0 +1,33 @@
+For saving customer data and as well as the account linked to it 
+POST -http://localhost:8088/api/saveCustomerAccount 
+
+
+For getting All the customers and account registered
+GET-http://localhost:8088/api/getCustomers
+
+
+For fetching customer from customer id
+GET-http://localhost:8088/api/getCustomer/3
+
+For transfering balance from one account to other
+POST-http://localhost:8088/api/transferAmount
+
+
+For fetching data based on some unique fields
+GET-http://localhost:8088/api/searchCustomer
+
+
+For fetching account data from id
+GET-http://localhost:8088/api/getAccount/2
+
+For achieving accounts instead of deleting customer data
+GET-http://localhost:8088/api/archieveCustomerAccounts
+
+For enabling accounts which are archieved by making the  isdeleted column to 0
+GET-http://localhost:8088/api/enableCustomerAccounts
+
+Updating record based on non serialized field
+POST-http://localhost:8088/api/updateCustomerAccount
+
+Updating record based on serialized fields
+POST-http://localhost:8088/api/updateSerializedCustomerAccount
